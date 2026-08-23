@@ -1,3 +1,5 @@
+while not game.Loaded do task.wait() end
+
 local Players = game:GetService("Players")
 local TS = game:GetService("TweenService")
 local UIS = game:GetService("UserInputService")
@@ -739,6 +741,8 @@ function NexusApi:CreateWindow(options)
 					return tonumber(Slider["2d"].Text)
 				end
 			end
+			
+			Slider:SetValue(options.value)
 			
 			--Logic
 			do
