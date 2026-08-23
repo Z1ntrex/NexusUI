@@ -39,7 +39,7 @@ function NexusApi:CreateWindow(options)
 
     do
         -- StarterGui.ScreenGui
-        GUI["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+        GUI["1"] = Instance.new("ScreenGui", CoreGui);
         GUI["1"]["Name"] = options.Name;
         GUI["1"]["IgnoreGuiInset"] = true;
         GUI["1"]["DisplayOrder"] = 999999999;
